@@ -30,7 +30,7 @@ workflows:
   version: 2
   two_and_one:
     jobs:
-      - two
-      - one:
+      - two:
           requires:
-            - two
+            - one
+      - one
